@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>T-Shirt Order Form</title>
+</head>
+<body>
+
+  <h1>Order Your T-Shirt</h1>
+
+  <form>
+    <label for="name">Full Name:</label><br/>
+    <input type="text" id="name" name="name" required minlength="2"><br/><br/>
+
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required><br/><br/>
+
+    <p>Select Colour:</p>
+    <input type="radio" id="red" name="color" value="Red" required>
+    <label for="red">Red</label><br/>
+    <input type="radio" id="blue" name="color" value="Blue">
+    <label for="blue">Blue</label><br/>
+    <input type="radio" id="black" name="color" value="Black">
+    <label for="black">Black</label><br/><br/>
+
+    <label for="size">Choose Size:</label><br/>
+    <select id="size" name="size" required>
+      <option value="">--Select--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select><br/><br/>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+</body>
+</html>
